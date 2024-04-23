@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from mysite.shopapp.models import Product
+from shopapp.models import Product
 
 
 class Command(BaseCommand):
@@ -21,4 +21,6 @@ class Command(BaseCommand):
         #     products, created = Product.objects.get_or_create(name="asdfgh")
         #     self.stdout.write(f'Created product {products}')
         self.stdout.write(self.style.SUCCESS('Successfully created products'))
+
+
 
